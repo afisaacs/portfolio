@@ -60,3 +60,17 @@ a.carousel-control-next, a.carousel-control-prev {
     -o-transition: 0.2s;
     transition: 0.2s;
 }
+
+#icon-navbar {
+    width: 40;
+}
+
+@media (max-width: 500px) {
+    #icon-navbar {
+        width: 20;
+    }
+
+    .navbar-brand {
+        padding: 0 !important;
+    }
+}
