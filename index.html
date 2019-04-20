@@ -6,16 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio - Aaron Isaacs</title>
-    <!-- tabicon -->
-    <link rel="icon" href="img/tabicon.png">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
+    <link rel="manifest" href="img/favicon//site.webmanifest">
+    <link rel="mask-icon" href="img/favicon//safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <!-- bootstrap 4 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- social bootstrap -->
-    <link href="https://lipis.github.io/bootstrap-social/assets/css/font-awesome.css" rel="stylesheet" type="text/css" media="all">
-    <link href="https://lipis.github.io/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://lipis.github.io/bootstrap-social/assets/css/font-awesome.css" rel="stylesheet" type="text/css"
+        media="all">
+    <link href="https://lipis.github.io/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css"
+        media="all">
     <!-- custom css -->
     <link rel="stylesheet" href="css/main.css">
     <!-- scroll reveal -->
@@ -31,11 +39,11 @@
 
         <!-- navigation -->
         <nav class="container navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand pl-5" href="#header" >
+            <a class="navbar-brand pl-5" href="#header">
                 <img id="icon-navbar" class="my-auto" src="img/tabicon.png" width="40">
                 <span style="margin-left: 20px;" class="my-auto">AARON FELIPE ISAACS</span>
             </a>
-            
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -197,7 +205,8 @@
                                                 class="btn-linkedin fa fa-linkedin"></i></a></li>
                                     <li><a target="_blank" href="https://twitter.com/Isaacs_ing"><i
                                                 class="btn-twitter fa fa-twitter"></i></a></li>
-                                    <li><a target="_blank" href="https://www.youtube.com/channel/UC2CKAxcMhSh5_RsC8V0O5kw"><i
+                                    <li><a target="_blank"
+                                            href="https://www.youtube.com/channel/UC2CKAxcMhSh5_RsC8V0O5kw"><i
                                                 class="btn-google fa fa-youtube"></i></a></li>
                                 </ul>
                             </div>
@@ -227,16 +236,16 @@
         sr.reveal('.header-content-left', { duration: 2000, origin: 'top', distance: '300px' });
         sr.reveal('.header-btn', { duration: 2000, origin: 'bottom', delay: 1000 });
         sr.reveal('#testimonial', { duration: 2000, origin: 'left', distance: '300px', viewFactor: 0.2 });
-        sr.reveal('#about-left', { duration: 2000, origin: 'left', distance: '300px'});
-        sr.reveal('#certificate', { duration: 2000, origin: 'bottom', distance: '300px'});
-        sr.reveal('footer', { duration: 2000, origin: 'bottom', distance: '300px'});
+        sr.reveal('#about-left', { duration: 2000, origin: 'left', distance: '300px' });
+        sr.reveal('#certificate', { duration: 2000, origin: 'bottom', distance: '300px' });
+        sr.reveal('footer', { duration: 2000, origin: 'bottom', distance: '300px' });
 
         var scrollorientation = 'left';
-        if(screen.width > 500) {
+        if (screen.width > 500) {
             scrollorientation = 'right';
-        } 
+        }
         sr.reveal('.header-content-right', { duration: 2000, origin: scrollorientation, distance: '300px' });
-        sr.reveal('#about-right', { duration: 2000, origin: scrollorientation, distance: '300px'});
+        sr.reveal('#about-right', { duration: 2000, origin: scrollorientation, distance: '300px' });
 
         //Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
